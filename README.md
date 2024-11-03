@@ -53,3 +53,7 @@ Avoid enemies, navigate obstacles, and collect as many coins and tokens as possi
 ## **Game Over**
 - When the player’s health reaches zero, the game ends.
 - A summary displays the total points collected by the player.
+---
+## **Example of the game**
+![image](https://github.com/user-attachments/assets/ae4ed791-b16b-4a70-abb5-48940a0c5e21)
+
