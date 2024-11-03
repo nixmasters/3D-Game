@@ -1,14 +1,55 @@
 # 3D-Game
-Game made in Intelijj IDEA using JavaFx technology .
-In this game player is controlled by pressing w,a,s,d keys and also space for jumping . While moving energy is being reduced by 3% per second , when not moving energy is restoring 1% per second .
-Player is haunted by ghost while the game is active , collecting all the coins and tokens around map , which when made contact player loses 10% hp per second . 
-There are also 3 hedgehogs wandering around the map that also collects coins and tokens around map and in contact with player , player lose hp .
-To keep the game active player is avoiding enemies and collecting as much of coins and tokens as possible while navigating through the obstacles on the map
-Player can collect yellow , green and blue coins which respectively give 1 , 3 and 5 points to the score . Player can also collect energy ( lightning) which restores energy that is used for moving in the game , freeze ( snowflake ) which freezes all enemies for 10 seconds , immunity which grants player to be invisible to damage taken for 10 seconds , health token that restores 25 % of the player max hp and joker coin .
-When the player picks up this coin , one of the following effects occurs:
-(40% probability) The player receives a random number of points from 1 to 10 with equal probabilities of 10% .
-(20% probability) 20% of energy is deducted, and 20% of health is added . 
-(20% probability) 20% of health is deducted, and 20% of energy is added . 
-(10% probability) Freezing bonus .  
-(10% probability) Immunity bonus .
-When the player dies, the game displays the points collected by the player .
+# JavaFX Game - Developed in IntelliJ IDEA
+
+This game is a JavaFX-based project where the player navigates a map, avoiding enemies and collecting various coins and power-ups. The player is constantly pursued by ghosts and must balance energy and health while accumulating points.
+
+---
+
+## **Controls**
+- **Movement:** `W`, `A`, `S`, `D` keys
+- **Jump:** `Space` key
+
+## **Game Mechanics**
+
+- **Energy Management:**
+  - Moving reduces energy by **3% per second**.
+  - Standing still restores energy at **1% per second**.
+
+- **Health & Enemies:**
+  - The player is haunted by a **ghost** throughout the game.
+  - **Hedgehogs** (3 in total) also wander the map, collecting coins and tokens.
+  - **Player Damage:**
+    - Contact with enemies (ghosts or hedgehogs) causes **HP loss**.
+    - **Coins and Tokens** on the map drain **10% HP per second** on contact.
+
+## **Objective**
+Avoid enemies, navigate obstacles, and collect as many coins and tokens as possible.
+
+---
+
+## **Collectibles**
+
+1. **Coins**  
+   - **Yellow Coin**: +1 point
+   - **Green Coin**: +3 points
+   - **Blue Coin**: +5 points
+
+2. **Power-Ups**
+   - **Energy (Lightning Bolt)**: Restores energy for movement.
+   - **Freeze (Snowflake)**: Freezes all enemies for **10 seconds**.
+   - **Immunity**: Grants invincibility against damage for **10 seconds**.
+   - **Health Token**: Restores **25%** of the player’s max HP.
+
+3. **Joker Coin**  
+   - When collected, triggers one of the following effects:
+     - **40% chance**: Player receives a random score boost (1–10 points, each with equal 10% probability).
+     - **20% chance**: Deducts **20% energy** and adds **20% health**.
+     - **20% chance**: Deducts **20% health** and adds **20% energy**.
+     - **10% chance**: Activates **Freeze bonus**.
+     - **10% chance**: Activates **Immunity bonus**.
+
+---
+
+## **Game Over**
+- When the player’s health reaches zero, the game ends.
+- A summary displays the total points collected by the player.
